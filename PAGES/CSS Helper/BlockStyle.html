@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<h1>CSS Generator</h1>
+	<div id="main_prop">
+		<div id="res">TEMPLATE</div>
+		<p>Ширина блока</p>
+		<input type="range" id="res_w" min="20" max="1000" value="0" onchange="changeW();" >px
+		<p>Высота блока</p>
+		<input type="range" id="res_h" min="20" max="1000" value="0" onchange="changeH();" >px
+		<p>Цвет</p>
+		<input type="color" id="res_c"  onchange="changeC();" >
+		<p>Рамка</p>
+		<input type="checkbox" id="checkB"  onchange="changeCheck();" >
+		<p>Ширина рамки</p>
+		<input type="number" id="res_b"  onchange="changeB();" >
+		<p>Цвет рамки</p>
+		<input type="color" id="res_bc"  onchange="changeBC();" >
+		<p>Стиль рамки</p>
+		<select id="res_bs"  onchange="changeBS();" >
+		
+        <option>solid</option>
+        <option>dotted</option>
+       
+        </select>
+        <p>Заокругление рамки</p>
+		<input type="number" id="res_br"  onchange="changeBR();" >
+		<p>Тени</p>
+		<input type="checkbox" id="checkSh"  onchange="changeCheckSh();" >
+		<p>Сдвиг по x</p>
+		<input type="number" id="res_sx"  onchange="changeSX();" >
+		<p>Сдвиг по y</p>
+		<input type="number" id="res_sy"  onchange="changeSY();" >
+		<p>Размытия</p>
+		<input type="number" id="res_sr"  onchange="changeSR();" >
+		<p>Растяжение</p>
+		<input type="number" id="res_sras"  onchange="changeSRas();" >
+		<p>Цвет тени</p>
+		<input type="color" id="res_sc"  onchange="changeSC();" >
+
+
+	</div>
+	<button onclick="code()">CSS Code</button>
+	<textarea id="textCode" cols="30" rows="10"></textarea>
+	<button onclick="document.location='../Images/img.html'">Next</button>
+	<button onclick="document.location='../Cookies/cookies.html'">Previous</button>
+	
+</body>
+</html>
